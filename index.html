@@ -1,94 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dr Anas | CS & AI Tutoring</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--  Google Font  -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Dr Anas – Private Tuition in Computer Science & AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<!-- ╔════════ HERO BANNER ══════════╗ -->
-<section class="hero">
-   <img src="images/Anas.jpg" alt="Dr Anas tutoring" class="hero-bg">
-   <div class="hero-overlay"></div>
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Private Tuition in Computer&nbsp;Science, AI &amp; Maths</h1>
+      <p>1-to-1 guidance in Arabic or English · BSc to PhD · Friendly and Effective</p>
+      <a href="https://wa.me/447123456789" class="cta" target="_blank">
+        <i class="fab fa-whatsapp"></i> Message Me
+      </a>
+    </div>
+    <div class="hero-img">
+      <img src="images/Anas.jpg" alt="Dr Anas portrait" />
+    </div>
+  </header>
 
-   <div class="hero-content">
-        <h1><span>Master CS, AI & Maths</span><br>with <strong>Dr Anas</strong></h1>
-        <p class="hero-tag">PhD • Senior Data Scientist • Ex-University Lecturer</p>
-        <a href="mailto:dr.anas.elhag@gmail.com" class="btn-primary">Book Free Consultation</a>
-   </div>
-</section>
+  <main class="container">
 
-<!-- ╔════════ ABOUT ME ═════════╗ -->
-<section class="about">
-   <div class="about-img">
-      <img src="images/about.jpg" alt="Dr Anas in lecture">
-   </div>
-   <div class="about-text">
-        <h2>Why learn with me?</h2>
-        <p>I’ve spent the last <strong>12 years</strong> teaching & researching Computer Science across the UK
-           and the Gulf (Doha University for Science & Technology, Sheffield, UCL).
-           I now lead AI projects as a Senior Data Scientist — translating complex
-           theory into **practical, career-boosting skills**.</p>
+    <section id="about">
+      <h2>👋 About Me</h2>
+      <p>I’m <strong>Dr Anas</strong>, a UK-based Senior Data Scientist with a PhD in Artificial Intelligence and years of experience teaching at the university level — most recently at Doha University for Science and Technology.</p>
+      <p>I’ve guided students through complex topics, supported dissertations and theses, and mentored research projects — all in both Arabic and English.</p>
+    </section>
 
-        <ul>
-          <li>✅ Python, C++, Java, MATLAB</li>
-          <li>✅ Machine-Learning & Large-Language-Models</li>
-          <li>✅ Algorithms, Discrete Maths, OS, Networks</li>
-          <li>✅ Thesis coaching <em>BSc → PhD</em></li>
-        </ul>
-   </div>
-</section>
+    <section id="services">
+      <h2>💡 What I Offer</h2>
+      <ul>
+        <li>1-to-1 tutoring in Python, Java, C++, Data Structures &amp; Algorithms</li>
+        <li>Machine Learning, LLMs, TensorFlow / PyTorch, Agentic AI</li>
+        <li>Math for CS: Linear Algebra, Probability, Optimisation</li>
+        <li>Support with theses, methodology, writing (BSc → PhD)</li>
+        <li>Exam prep, assignments &amp; coursework help</li>
+      </ul>
+      <p class="note"><strong>🎁 Free 30-minute consultation to get started.</strong></p>
+    </section>
 
-<!-- ╔════════ SERVICES (CARDS) ═════════╗ -->
-<section class="services">
-   <article class="card">
-      <img src="images/icon-code.svg" alt="">
-      <h3>Live Coding Labs</h3>
-      <p>Step-by-step problem solving, pair-programming & code review.</p>
-   </article>
+    <section id="gallery">
+      <h2>📸 In Action</h2>
+      <div class="gallery">
+        <img src="images/Anas.jpg" alt="Tutoring online" />
+        <img src="images/Anas.jpg" alt="Explaining algorithms" />
+        <img src="images/Anas.jpg" alt="Research presentation" />
+        <img src="images/Anas.jpg" alt="Live coding session" />
+        <img src="images/Anas.jpg" alt="AI lab mentoring" />
+        <img src="images/Anas.jpg" alt="Graduation day" />
+      </div>
+    </section>
 
-   <article class="card">
-      <img src="images/icon-ai.svg" alt="">
-      <h3>AI Mentorship</h3>
-      <p>Build & deploy ML models, fine-tune LLMs, prep for Kaggle / jobs.</p>
-   </article>
+    <section id="contact">
+      <h2>📬 Contact</h2>
+      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/447123456789" target="_blank">+44 7123 456 789</a></p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:dr.anas.elhag@gmail.com">dr.anas.elhag@gmail.com</a></p>
+      <p><i class="fab fa-twitter"></i> <a href="https://twitter.com/" target="_blank">@dranas</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
 
-   <article class="card">
-      <img src="images/icon-thesis.svg" alt="">
-      <h3>Thesis Rescue</h3>
-      <p>Research design, experiment pipelines, proofreading & Viva prep.</p>
-   </article>
-</section>
-
-<!-- ╔════════ MINI GALLERY ═════════╗ -->
-<section class="gallery">
-    <!-- six lightweight thumbs -->
-    <img src="images/whiteboard.jpg"    alt="Explaining algorithms">
-    <img src="images/ai-lab.jpg"        alt="AI lab mentoring">
-    <img src="images/coding.jpg"        alt="Live coding">
-    <img src="images/conference.jpg"    alt="Research talk">
-    <img src="images/graduation.jpg"    alt="Student success">
-    <img src="images/session-1.jpg"     alt="Online session">
-</section>
-
-<!-- ╔════════ CONTACT BAR ═════════╗ -->
-<footer class="contact-bar">
-  <a href="mailto:dr.anas.elhag@gmail.com"  class="contact-btn">Email</a>
-  <a href="https://wa.me/447000000000"      class="contact-btn" aria-label="WhatsApp">
-      <img src="images/icon-whatsapp.svg" alt=""> WhatsApp
-  </a>
-  <a href="https://twitter.com/yourhandle"  class="contact-btn" aria-label="Twitter">
-      <img src="images/icon-twitter.svg" alt="">
-  </a>
-  <a href="https://www.linkedin.com/in/yourprofile" class="contact-btn" aria-label="LinkedIn">
-      <img src="images/icon-linkedin.svg" alt="">
-  </a>
-  <small>&copy; 2025 Dr Anas Tutoring</small>
-</footer>
+  <footer>
+    &copy; 2025 Dr Anas — Private Tuition. All rights reserved.
+  </footer>
 
 </body>
 </html>
