@@ -1,12 +1,108 @@
-.container {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: magenta;
-
-    width: 80%;
-    margin: auto;
+:root{
+  --brand:#006d77;
+  --brand-light:#83c5be;
+  --bg:#f5f7fa;
+  --txt:#042f2e;
 }
 
-.mainImg {
-    width: 400px;
+/* reset & base */
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:system-ui,Segoe UI,Helvetica,Arial,sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--txt);
+  line-height:1.6;
+}
+
+/* ----- header / hero ----- */
+header{
+  background:var(--brand);
+  color:#fff;
+  padding:3rem 1rem;
+  text-align:center;
+}
+
+header img{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #fff;
+  margin-top:1rem;
+}
+
+h1{
+  font-size:2rem;
+  margin-bottom:.5rem;
+}
+
+/* ----- headings ----- */
+h2{
+  color:var(--brand);
+  margin:2.5rem 0 1rem;
+  font-size:1.4rem;
+}
+
+/* ----- content wrapper ----- */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:1rem;
+}
+
+/* ----- text ----- */
+p,li{
+  font-size:1rem;
+  margin:.6rem 0;
+}
+
+ul{padding-left:1rem;}
+
+/* ----- call-to-action button ----- */
+.cta{
+  background:var(--brand);
+  color:#fff;
+  padding:.8rem 1.2rem;
+  border:none;
+  border-radius:5px;
+  font-size:1rem;
+  cursor:pointer;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:1rem;
+}
+
+/* ----- gallery grid ----- */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:10px;
+  margin-top:1rem;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:4px;
+  object-fit:cover;
+  height:160px;
+}
+
+/* ----- footer ----- */
+footer{
+  background:#0b4c54;
+  color:#cfe8e7;
+  padding:2rem 1rem;
+  margin-top:3rem;
+  text-align:center;
+  font-size:.9rem;
+}
+
+/* ----- responsiveness ----- */
+@media (min-width:700px){
+  h1{font-size:2.4rem;}
 }
