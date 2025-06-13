@@ -2,71 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dr Anas – Private Tuition in Computer Science & AI</title>
+  <title>Dr Anas | Premium CS & AI Tutoring</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- link the external stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ===== HERO ===== -->
-  <header>
-    <h1>Expert Tutoring in Computer&nbsp;Science, AI &amp; Maths</h1>
-    <p>1-to-1 guidance &bull; Arabic &amp; English &bull; BSc → PhD</p>
-    <!-- replace hero.jpg with your own portrait -->
-    <img src="images/Anas.jpg" alt="Dr Anas – Tutor portrait">
-    <a class="cta" href="https://wa.me/447123456789" target="_blank">Message me on WhatsApp</a>
+  <!-- === HERO / TOP PANEL (fills most screens) === -->
+  <header class="hero">
+      <!-- big portrait -->
+      <div class="hero-img">
+        <!-- 400×500 px recommended -->
+        <img src="images/hero.jpg" alt="Dr Anas – Computer-Science Tutor">
+      </div>
+
+      <!-- intro & CTA -->
+      <div class="hero-text">
+        <h1>Master Computer&nbsp;Science&nbsp;&amp;&nbsp;AI<br><span>with Dr Anas</span></h1>
+        <p class="tagline">PhD • Senior Data Scientist • ex-University Lecturer</p>
+
+        <ul class="services">
+          <li>Programming (Python, C++, Java)</li>
+          <li>Machine Learning &amp; LLMs</li>
+          <li>Algorithms &amp; Maths</li>
+          <li>Thesis coaching (BSc → PhD)</li>
+        </ul>
+
+        <a class="cta" href="mailto:dr.anas.elhag@gmail.com">Book Free Consultation</a>
+
+        <!-- social icons -->
+        <div class="social">
+          <a href="https://twitter.com/yourhandle" aria-label="Twitter">
+            <!-- simple inline SVG -->
+            <svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 001.88-2.37 8.52 8.52 0 01-2.71 1.04 4.24 4.24 0 00-7.3 3.86A12.03 12.03 0 013 4.67a4.24 4.24 0 001.31 5.66 4.22 4.22 0 01-1.92-.53v.05a4.24 4.24 0 003.4 4.15 4.3 4.3 0 01-1.91.07 4.24 4.24 0 003.96 2.94A8.5 8.5 0 012 19.54 12.04 12.04 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.36-.01-.54A8.34 8.34 0 0022.46 6z" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/yourprofile" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1A2.5 2.5 0 014.98 3.5zM0 8.98h5v14.02H0V8.98zM8.98 8.98h4.79v1.89h.07c.67-1.26 2.31-2.58 4.77-2.58 5.1 0 6.04 3.36 6.04 7.73v8.98h-5V16.7c0-1.94-.03-4.43-2.7-4.43-2.7 0-3.11 2.11-3.11 4.29v7.44h-5V8.98z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
   </header>
 
-  <main class="container">
-    <!-- ===== ABOUT ===== -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I’m <strong>Dr Anas</strong>, a Senior Data Scientist in the UK, former faculty member at
-         Doha University for Science &amp; Technology, and a PhD holder in Artificial Intelligence.</p>
-      <p>Over the last 12 years I’ve helped <em>hundreds</em> of students master programming,
-         complete dissertations, and publish research in top journals — in both Arabic and English.</p>
-    </section>
+  <!-- === MINI-GALLERY (small thumbnails) === -->
+  <section class="gallery">
+      <!-- 6 lightweight thumbnails -->
+      <img src="images/whiteboard.jpg"  alt="Explaining algorithms">
+      <img src="images/ai-lab.jpg"      alt="AI lab mentoring">
+      <img src="images/coding.jpg"      alt="Live coding">
+      <img src="images/conference.jpg"  alt="Research talk">
+      <img src="images/graduation.jpg"  alt="Student success">
+      <img src="images/session-1.jpg"   alt="Online session">
+  </section>
 
-    <!-- ===== SERVICES ===== -->
-    <section id="services">
-      <h2>What I Offer</h2>
-      <ul>
-        <li>1-to-1 online tutoring in Python, Java, C/C++, Data Structures, Algorithms.</li>
-        <li>AI &amp; Machine Learning coaching (TensorFlow / PyTorch, LLMs, Agentic AI).</li>
-        <li>Mathematics for CS — Linear Algebra, Probability, Optimisation.</li>
-        <li>Thesis &amp; paper supervision (BSc, MSc, PhD) — methodology, experiments, writing.</li>
-        <li>Crash-course exam prep and assignment rescue sessions.</li>
-      </ul>
-      <p><strong>First 30-minute consultation is free.</strong></p>
-    </section>
-
-    <!-- ===== GALLERY ===== -->
-    <section id="gallery">
-      <h2>In Action</h2>
-      <div class="gallery">
-        <!-- replace filenames with your own -->
-        <img src="images/Anas.jpg" alt="Tutoring snapshot">
-        <img src="images/Anas.jpg" alt="Explaining algorithms on whiteboard">
-        <img src="images/Anas.jpg" alt="Presenting research at a conference">
-        <img src="images/Anas.jpg" alt="Live coding session">
-        <img src="images/Anas.jpg" alt="AI lab mentoring">
-        <img src="images/Anas.jpg" alt="Student graduation day">
-      </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section id="contact">
-      <h2>Get in Touch</h2>
-      <p>📞 <strong>WhatsApp:</strong> <a href="https://wa.me/447123456789" target="_blank">+44 7123 456 789</a></p>
-      <p>📧 <strong>Email:</strong> <a href="mailto:dr.anas.elhag@gmail.com">dr.anas.elhag@gmail.com</a></p>
-      <p>🌍 <strong>Time zone:</strong> flexible between UK &amp; Gulf (evenings &amp; weekends available).</p>
-    </section>
-  </main>
-
-  <!-- ===== FOOTER ===== -->
+  <!-- === FOOTER === -->
   <footer>
-    &copy; 2025 Dr Anas — Private Tuition.  All rights reserved.
+    <p>📧 <a href="mailto:dr.anas.elhag@gmail.com">dr.anas.elhag@gmail.com</a></p>
+    <small>&copy; 2025 Dr Anas Tutoring. All rights reserved.</small>
   </footer>
 
 </body>
