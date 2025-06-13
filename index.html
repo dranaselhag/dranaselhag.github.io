@@ -2,63 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dr Anas | Premium CS & AI Tutoring</title>
+  <title>Dr Anas | CS & AI Tutoring</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  Google Font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- === HERO / TOP PANEL (fills most screens) === -->
-  <header class="hero">
-      <!-- big portrait -->
-      <div class="hero-img">
-        <!-- 400×500 px recommended -->
-        <img src="images/Anas.jpg" alt="Dr Anas – Computer-Science Tutor">
-      </div>
+<!-- ╔════════ HERO BANNER ══════════╗ -->
+<section class="hero">
+   <img src="images/Anas.jpg" alt="Dr Anas tutoring" class="hero-bg">
+   <div class="hero-overlay"></div>
 
-      <!-- intro & CTA -->
-      <div class="hero-text">
-        <h1>Master Computer&nbsp;Science&nbsp;&amp;&nbsp;AI<br><span>with Dr Anas</span></h1>
-        <p class="tagline">PhD • Senior Data Scientist • ex-University Lecturer</p>
+   <div class="hero-content">
+        <h1><span>Master CS, AI & Maths</span><br>with <strong>Dr Anas</strong></h1>
+        <p class="hero-tag">PhD • Senior Data Scientist • Ex-University Lecturer</p>
+        <a href="mailto:dr.anas.elhag@gmail.com" class="btn-primary">Book Free Consultation</a>
+   </div>
+</section>
 
-        <ul class="services">
-          <li>Programming (Python, C++, Java)</li>
-          <li>Machine Learning &amp; LLMs</li>
-          <li>Algorithms &amp; Maths</li>
-          <li>Thesis coaching (BSc → PhD)</li>
+<!-- ╔════════ ABOUT ME ═════════╗ -->
+<section class="about">
+   <div class="about-img">
+      <img src="images/about.jpg" alt="Dr Anas in lecture">
+   </div>
+   <div class="about-text">
+        <h2>Why learn with me?</h2>
+        <p>I’ve spent the last <strong>12 years</strong> teaching & researching Computer Science across the UK
+           and the Gulf (Doha University for Science & Technology, Sheffield, UCL).
+           I now lead AI projects as a Senior Data Scientist — translating complex
+           theory into **practical, career-boosting skills**.</p>
+
+        <ul>
+          <li>✅ Python, C++, Java, MATLAB</li>
+          <li>✅ Machine-Learning & Large-Language-Models</li>
+          <li>✅ Algorithms, Discrete Maths, OS, Networks</li>
+          <li>✅ Thesis coaching <em>BSc → PhD</em></li>
         </ul>
+   </div>
+</section>
 
-        <a class="cta" href="mailto:dr.anas.elhag@gmail.com">Book Free Consultation</a>
+<!-- ╔════════ SERVICES (CARDS) ═════════╗ -->
+<section class="services">
+   <article class="card">
+      <img src="images/icon-code.svg" alt="">
+      <h3>Live Coding Labs</h3>
+      <p>Step-by-step problem solving, pair-programming & code review.</p>
+   </article>
 
-        <!-- social icons -->
-        <div class="social">
-          <a href="https://twitter.com/yourhandle" aria-label="Twitter">
-            <!-- simple inline SVG -->
-            <svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 001.88-2.37 8.52 8.52 0 01-2.71 1.04 4.24 4.24 0 00-7.3 3.86A12.03 12.03 0 013 4.67a4.24 4.24 0 001.31 5.66 4.22 4.22 0 01-1.92-.53v.05a4.24 4.24 0 003.4 4.15 4.3 4.3 0 01-1.91.07 4.24 4.24 0 003.96 2.94A8.5 8.5 0 012 19.54 12.04 12.04 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.36-.01-.54A8.34 8.34 0 0022.46 6z" fill="currentColor"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/yourprofile" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1A2.5 2.5 0 014.98 3.5zM0 8.98h5v14.02H0V8.98zM8.98 8.98h4.79v1.89h.07c.67-1.26 2.31-2.58 4.77-2.58 5.1 0 6.04 3.36 6.04 7.73v8.98h-5V16.7c0-1.94-.03-4.43-2.7-4.43-2.7 0-3.11 2.11-3.11 4.29v7.44h-5V8.98z" fill="currentColor"/></svg>
-          </a>
-        </div>
-      </div>
-  </header>
+   <article class="card">
+      <img src="images/icon-ai.svg" alt="">
+      <h3>AI Mentorship</h3>
+      <p>Build & deploy ML models, fine-tune LLMs, prep for Kaggle / jobs.</p>
+   </article>
 
-  <!-- === MINI-GALLERY (small thumbnails) === -->
-  <section class="gallery">
-      <!-- 6 lightweight thumbnails -->
-      <img src="images/whiteboard.jpg"  alt="Explaining algorithms">
-      <img src="images/ai-lab.jpg"      alt="AI lab mentoring">
-      <img src="images/coding.jpg"      alt="Live coding">
-      <img src="images/conference.jpg"  alt="Research talk">
-      <img src="images/graduation.jpg"  alt="Student success">
-      <img src="images/session-1.jpg"   alt="Online session">
-  </section>
+   <article class="card">
+      <img src="images/icon-thesis.svg" alt="">
+      <h3>Thesis Rescue</h3>
+      <p>Research design, experiment pipelines, proofreading & Viva prep.</p>
+   </article>
+</section>
 
-  <!-- === FOOTER === -->
-  <footer>
-    <p>📧 <a href="mailto:dr.anas.elhag@gmail.com">dr.anas.elhag@gmail.com</a></p>
-    <small>&copy; 2025 Dr Anas Tutoring. All rights reserved.</small>
-  </footer>
+<!-- ╔════════ MINI GALLERY ═════════╗ -->
+<section class="gallery">
+    <!-- six lightweight thumbs -->
+    <img src="images/whiteboard.jpg"    alt="Explaining algorithms">
+    <img src="images/ai-lab.jpg"        alt="AI lab mentoring">
+    <img src="images/coding.jpg"        alt="Live coding">
+    <img src="images/conference.jpg"    alt="Research talk">
+    <img src="images/graduation.jpg"    alt="Student success">
+    <img src="images/session-1.jpg"     alt="Online session">
+</section>
+
+<!-- ╔════════ CONTACT BAR ═════════╗ -->
+<footer class="contact-bar">
+  <a href="mailto:dr.anas.elhag@gmail.com"  class="contact-btn">Email</a>
+  <a href="https://wa.me/447000000000"      class="contact-btn" aria-label="WhatsApp">
+      <img src="images/icon-whatsapp.svg" alt=""> WhatsApp
+  </a>
+  <a href="https://twitter.com/yourhandle"  class="contact-btn" aria-label="Twitter">
+      <img src="images/icon-twitter.svg" alt="">
+  </a>
+  <a href="https://www.linkedin.com/in/yourprofile" class="contact-btn" aria-label="LinkedIn">
+      <img src="images/icon-linkedin.svg" alt="">
+  </a>
+  <small>&copy; 2025 Dr Anas Tutoring</small>
+</footer>
 
 </body>
 </html>
