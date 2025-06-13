@@ -1,108 +1,139 @@
+/* ===== CSS VARIABLES (easy theme tweaks) ===== */
 :root{
-  --brand:#006d77;
-  --brand-light:#83c5be;
-  --bg:#f5f7fa;
-  --txt:#042f2e;
+  --brand:#005f8d;
+  --brand-light:#1fa4e2;
+  --bg:#f3f6fa;
+  --text:#05212e;
+  --white:#ffffff;
+  --shadow:0 6px 18px rgba(0,0,0,.08);
+  --radius:8px;
+  --grad:linear-gradient(135deg,var(--brand) 0%,var(--brand-light) 100%);
 }
 
-/* reset & base */
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-  font-family:system-ui,Segoe UI,Helvetica,Arial,sans-serif;
-}
-
+/* ===== RESET & BASE ===== */
+*{box-sizing:border-box;margin:0;padding:0}
 body{
+  font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  color:var(--text);
   background:var(--bg);
-  color:var(--txt);
-  line-height:1.6;
+  overflow-x:hidden;
+}
+/* selection colour */
+::selection{background:var(--brand-light);color:var(--white);}
+
+/* ===== HERO LAYOUT ===== */
+.hero{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  padding:2rem 1rem 3rem;
+  min-height:90vh;               /* fills most screens */
+  background:var(--grad);
+  color:var(--white);
+  position:relative;
 }
 
-/* ----- header / hero ----- */
-header{
-  background:var(--brand);
-  color:#fff;
-  padding:3rem 1rem;
-  text-align:center;
-}
-
-header img{
-  width:140px;
-  height:140px;
-  border-radius:50%;
+.hero-img img{
+  width:340px;
+  max-width:90vw;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
   object-fit:cover;
-  border:4px solid #fff;
-  margin-top:1rem;
 }
 
-h1{
-  font-size:2rem;
-  margin-bottom:.5rem;
+.hero-text{
+  max-width:420px;
+  margin:1.5rem 2rem;
 }
 
-/* ----- headings ----- */
-h2{
-  color:var(--brand);
-  margin:2.5rem 0 1rem;
-  font-size:1.4rem;
+.hero-text h1{
+  font-size:2.2rem;
+  line-height:1.2;
+}
+.hero-text h1 span{font-weight:400;}
+
+.tagline{
+  font-size:1.05rem;
+  margin:.6rem 0 1.3rem;
+  opacity:.9;
 }
 
-/* ----- content wrapper ----- */
-.container{
-  max-width:900px;
-  margin:auto;
-  padding:1rem;
+.services{
+  list-style:none;
+  margin-bottom:1.4rem;
+}
+.services li{
+  position:relative;
+  padding-left:1.2rem;
+  margin:.3rem 0;
+}
+.services li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  color:var(--brand-light);
+  font-weight:700;
 }
 
-/* ----- text ----- */
-p,li{
-  font-size:1rem;
-  margin:.6rem 0;
-}
-
-ul{padding-left:1rem;}
-
-/* ----- call-to-action button ----- */
 .cta{
-  background:var(--brand);
-  color:#fff;
-  padding:.8rem 1.2rem;
-  border:none;
-  border-radius:5px;
-  font-size:1rem;
-  cursor:pointer;
-  text-decoration:none;
   display:inline-block;
-  margin-top:1rem;
+  background:var(--white);
+  color:var(--brand);
+  padding:.8rem 1.4rem;
+  border-radius:var(--radius);
+  font-weight:600;
+  text-decoration:none;
+  box-shadow:var(--shadow);
+  transition:.25s;
 }
+.cta:hover{transform:translateY(-2px);}
 
-/* ----- gallery grid ----- */
+.social{
+  margin-top:1.4rem;
+}
+.social a{
+  color:var(--white);
+  margin-right:1rem;
+  display:inline-block;
+  width:32px;
+  height:32px;
+  transition:.25s;
+}
+.social a:hover{transform:scale(1.1);}
+
+/* ===== MINI-GALLERY ===== */
 .gallery{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
   gap:10px;
-  margin-top:1rem;
+  padding:2rem 1rem;
+  max-width:1000px;
+  margin:-4rem auto 0;   /* overlaps hero edge for “card” feel */
 }
-
 .gallery img{
   width:100%;
-  border-radius:4px;
+  height:120px;
   object-fit:cover;
-  height:160px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
 }
 
-/* ----- footer ----- */
+/* ===== FOOTER ===== */
 footer{
-  background:#0b4c54;
-  color:#cfe8e7;
-  padding:2rem 1rem;
-  margin-top:3rem;
+  background:#002b40;
+  color:#c9e6f5;
   text-align:center;
-  font-size:.9rem;
+  padding:1.8rem 1rem 2.5rem;
+  font-size:.92rem;
 }
+footer a{color:#88d0ff;text-decoration:none;}
+footer a:hover{text-decoration:underline;}
 
-/* ----- responsiveness ----- */
-@media (min-width:700px){
-  h1{font-size:2.4rem;}
+/* ===== RESPONSIVE TWEAKS ===== */
+@media (max-width:760px){
+  .hero{padding-top:1.5rem;min-height:auto;}
+  .hero-text{margin:2rem 0 0;}
+  .hero-text h1{font-size:1.7rem;}
+  .gallery{grid-template-columns:repeat(3,1fr);}
 }
