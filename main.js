@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // button label
     if (toggleTxt) {
       toggleTxt.textContent = arabic
-        ? '🇬🇧 English Version'
+        ? 'English Version'
         : 'النسخة العربية';
     }
   }
