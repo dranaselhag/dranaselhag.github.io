@@ -20,7 +20,7 @@ function switchLang () {
   document.querySelectorAll('.lang-ar').forEach(el => el.classList.toggle('hidden', !makeArabic));
 
   /* button label */
-  toggleTx.textContent = makeArabic ? '🇬🇧 English Version' : 'اقرأ باللغة العربية';
+  toggleTx.textContent = makeArabic ? 'English Version' : 'النسخة العربية';
 }
 toggle.addEventListener('click', e => {e.preventDefault(); switchLang();});
 
