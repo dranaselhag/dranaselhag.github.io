@@ -3,106 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <title>Dr Anas · Private Tuition in CS & AI</title>
-  <meta name="description" content="Private tutoring with Dr Anas: 1-to-1 help in Computer Science, AI, and Maths from BSc to PhD. Learn in Arabic or English.">
+  <meta name="description" content="Private tutoring with Dr Anas: 1-to-1 help in Computer Science, AI & Maths from BSc to PhD. Learn in Arabic or English.">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-33M73GFVGG"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-33M73GFVGG');
-	</script>
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Dr Anas · Private Tuition in CS & AI">
-  <meta property="og:description" content="1-to-1 tutoring in Computer Science, AI & Maths. BSc to PhD. Learn in Arabic or English.">
-  <meta property="og:image" content="https://dranaselhag.github.io/images/anas.jpg">
-  <meta property="og:url"   content="https://dranaselhag.github.io/">
-  <meta property="og:type"  content="website">
-
-  <!-- Twitter Card -->
+  <!-- SEO / Social -->
+  <link rel="canonical" href="https://dranaselhag.github.io/">
+  <meta property="og:title"        content="Dr Anas · Private Tuition in CS & AI">
+  <meta property="og:description"  content="1-to-1 tutoring in Computer Science, AI & Maths. BSc to PhD. Learn in Arabic or English.">
+  <meta property="og:image"        content="https://dranaselhag.github.io/images/anas.jpg">
+  <meta property="og:url"          content="https://dranaselhag.github.io/">
+  <meta property="og:type"         content="website">
   <meta name="twitter:card"        content="summary_large_image">
   <meta name="twitter:title"       content="Dr Anas · Private Tuition in CS & AI">
   <meta name="twitter:description" content="Private 1-to-1 tutoring in Computer Science, AI & Maths – from BSc to PhD.">
   <meta name="twitter:image"       content="https://dranaselhag.github.io/images/anas.jpg">
 
+  <!-- Fonts / Icons / CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-33M73GFVGG"></script>
+</head>
+
+<body>
+<!-- ============ HERO ============ -->
 <header class="hero">
   <div class="hero__inner">
-    <!-- left 25 % -->
-    <div class="hero__media">
-      <img src="images/logo.png" alt="Dr Anas Logo">
-    </div>
-
-    <!-- right 75 % -->
+    <div class="hero__media"><img src="images/logo.png" alt="Dr Anas logo"></div>
     <div class="hero__content">
-      <h1>Private Tuition in<br><span class="accent">Computer Science, AI & Maths</span></h1>
-      <p class="sub">Arabic & English • BSc → PhD • £30-£50 per hour</p>
+      <h1 class="lang-en">Private Tuition in<br><span class="accent">Computer Science, AI & Maths</span></h1>
+      <!-- arrow changed → for EN is fine -->
+      <h1 class="lang-ar hidden">دروس خصوصية في علوم الحاسوب،<br><span class="accent">الذكاء الاصطناعي، والرياضيات</span></h1>
 
+      <!-- sub-line -->
+      <!--<p class="sub lang-en">Arabic & English • BSc → PhD • £30-£50 per hour</p>-->
+	  <p class="sub lang-en">Arabic & English • BSc, MSc and PhD • £30-£50 per hour</p>
+
+      <!-- arrow direction + £ position fixed -->
+     <!--<p class="sub lang-ar hidden">بالعربية والإنجليزية • بكالوريوس ← دكتوراه • &#8206;£30 - &#8206;£50 في الساعة</p>-->
+	 <p class="sub lang-ar hidden">بالعربية والإنجليزية • بكالوريوس، ماجستير ودكتوراه • &#8206;£30 - &#8206;£50 في الساعة</p>
+
+
+      <!-- contacts + toggle -->
       <div class="hero__contact">
-        <a href="https://wa.me/447123456789"  target="_blank" class="card"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        <a href="mailto:dr.anas.elhag@gmail.com"                class="card"><i class="fa fa-envelope"></i> Email</a>
-        <a href="https://x.com/Anas_Abdalla"    target="_blank" class="card"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="https://uk.linkedin.com/in/anaselhag" target="_blank" class="card"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:dr.anas.elhag@gmail.com" class="card">
+          <i class="fa fa-envelope"></i> <span class="lang-en">Email</span><span class="lang-ar hidden">البريد الإلكتروني</span>
+        </a>
+        <a href="https://x.com/Anas_Abdalla" target="_blank" rel="noopener" class="card">
+          <i class="fab fa-twitter"></i> <span class="lang-en">Twitter</span><span class="lang-ar hidden">تويتر</span>
+        </a>
+        <a href="https://uk.linkedin.com/in/anaselhag" target="_blank" rel="noopener" class="card">
+          <i class="fab fa-linkedin"></i> <span class="lang-en">LinkedIn</span><span class="lang-ar hidden">لينكدإن</span>
+        </a>
+        <a href="#" id="toggle-lang" class="card lang-toggle">
+          <i class="fa-solid fa-language"></i> <span id="toggle-text">اقرأ باللغة العربية</span>
+        </a>
       </div>
     </div>
   </div>
 </header>
 
-<!-- =====================================================
-     ABOUT
-===================================================== -->
+<!-- ============ ABOUT ============ -->
 <section id="about" class="section about">
-  <div class="media">
-    <img src="images/anas.jpg" alt="Dr Anas portrait">
-  </div>
-  <div class="text" style="text-align:justify">
-    <h2>Hi, I’m <strong>Dr Anas</strong></h2>
-    <p>
-      I’m a computer scientist and educator with over 15 years of experience helping students master Computer Science, AI, and Maths — from undergraduates to PhD candidates.
-    </p>
-    <p>
-      I’ve taught, supervised, and conducted research at some of the world’s leading institutions:
-    </p>
+  <div class="media"><img src="images/anas.jpg" alt=""></div>
 
-    <ul style="list-style:none;padding-left:0;line-height:2;font-weight:600;font-size:1.05rem;">
+  <div class="text lang-en">
+    <h2>Hi, I’m <strong>Dr Anas</strong></h2>
+    <p>I’m a computer scientist and educator with over 15 years of experience helping students master Computer Science, AI, and Maths — from undergraduates to PhD candidates.</p>
+    <p>I’ve taught, supervised, and conducted research at some of the world’s leading institutions:</p>
+    <ul>
       <li><i class="fa-solid fa-chalkboard-user"></i> Assistant Professor — <span style="color:var(--maroon)">UDST (Qatar)</span></li>
       <li><i class="fa-solid fa-chalkboard-user"></i> Assistant Professor — <span style="color:var(--maroon)">University of Manchester (UK)</span></li>
       <li><i class="fa-solid fa-microscope"></i> Senior Research Associate — <span style="color:var(--maroon)">Lancaster University (UK)</span></li>
       <li><i class="fa-solid fa-graduation-cap"></i> PhD & Teaching Assistant — <span style="color:var(--maroon)">University of Nottingham (UK)</span></li>
     </ul>
+    <p>My approach is friendly, honest, and tailored to each student. If you want structured help that actually works — let’s chat.</p>
+  </div>
 
-    <p>
-      My approach is friendly, honest, and tailored to each student. If you want structured help that actually works — let’s chat.
-    </p>
+  <div class="text lang-ar hidden">
+    <h2>مرحباً، أنا <strong>الدكتور أنس</strong></h2>
+    <p>أنا عالم حاسوب ومُعلّم بخبرة تزيد عن 15 عاماً في مساعدة الطلاب على إتقان علوم الحاسوب، الذكاء الاصطناعي، والرياضيات — من المرحلة الجامعية وحتى الدكتوراه.</p>
+    <p>عملت بالتدريس والإشراف والبحث العلمي في بعض من أرقى الجامعات حول العالم:</p>
+    <ul>
+      <li><i class="fa-solid fa-chalkboard-user"></i> بروفيسور مساعد — <span style="color:var(--maroon)">جامعة الدوحة للعلوم والتكنولوجيا (قطر)</span></li>
+      <li><i class="fa-solid fa-chalkboard-user"></i> بروفيسور مساعد — <span style="color:var(--maroon)">جامعة مانشستر (بريطانيا)</span></li>
+      <li><i class="fa-solid fa-microscope"></i> باحث أول — <span style="color:var(--maroon)">جامعة لانكستر (بريطانيا)</span></li>
+      <li><i class="fa-solid fa-graduation-cap"></i> دكتوراه ومساعد تدريس — <span style="color:var(--maroon)">جامعة نوتنغهام (بريطانيا)</span></li>
+    </ul>
+    <p>طريقتي ودية، صادقة، ومُصمَّمة حسب احتياجات كل طالب. إذا كنت تبحث عن دعم منظَّم وفعّال — تواصل معي.</p>
   </div>
 </section>
 
-<!-- =====================================================
-     SERVICES   (unchanged)
-===================================================== -->
+<!-- ============ SERVICES ============ -->
 <section id="services" class="section">
-  <h2>How I can help you</h2>
-  <div class="service-grid">
-    <div class="service-card"><h3>Programming</h3><p>Python · Java · C/C++ · C#<br>Object-Oriented Programming (OOP)</p></div>
-    <div class="service-card"><h3>Data Science & AI</h3><p>Data Analysis and Visualization<br>Machine Learning · AI · GenAI · Agentic AI</p></div>
+  <h2 class="lang-en">How I can help you</h2>
+  <h2 class="lang-ar hidden">كيف يمكنني مساعدتك</h2>
+
+  <div class="service-grid lang-en">
+    <div class="service-card"><h3>Programming</h3><p>Python · Java · C/C++ · C#<br>Object-Oriented Programming</p></div>
+    <div class="service-card"><h3>Data Science & AI</h3><p>Data Analysis & Visualisation<br>Machine Learning · AI · GenAI</p></div>
     <div class="service-card"><h3>CS & Maths Foundations</h3><p>Linear Algebra · Probability · Statistics<br>Discrete Maths · Optimisation</p></div>
     <div class="service-card"><h3>Computer Science Courses</h3><p>Operating Systems · Algorithms<br>Databases · Data Structures</p></div>
-    <div class="service-card"><h3>Exam Prep & Rescue</h3><p>Crash revision before deadlines and exams<br>Resit coaching & strategy</p></div>
+    <div class="service-card"><h3>Exam Prep & Rescue</h3><p>Crash revision before deadlines & exams<br>Resit coaching & strategy</p></div>
     <div class="service-card"><h3>Capstone / Thesis Support</h3><p>Supervision · Methodology · Experiments<br>Academic Writing (BSc → PhD)</p></div>
     <div class="service-card"><h3>Coaching & Mentoring</h3><p>Study Plans · Learning Mindset<br>Career Planning & Research Advice</p></div>
     <div class="service-card cta">
@@ -110,87 +117,113 @@
       <a href="#contact" class="cta-button">Book a Free Intro Chat</a>
     </div>
   </div>
-  <p class="note">* This list isn’t exhaustive — feel free to reach out with your course or topic and we’ll work out a tailored plan.</p>
-  <p class="note">* I do not do your coursework or assignments for you — I guide and teach you how to master it yourself!</p>
+
+  <div class="service-grid lang-ar hidden">
+    <div class="service-card"><h3>البرمجة</h3><p>بايثون · جافا · سي/سي++ · C#<br>البرمجة كائنية التوجه</p></div>
+    <div class="service-card"><h3>علم البيانات والذكاء الاصطناعي</h3><p>تحليل البيانات · تعلم الآلة<br>الذكاء الاصطناعي · الذكاء الاصطناعي التوليدي</p></div>
+    <div class="service-card"><h3>الأساسيات في علوم الحاسوب والرياضيات</h3><p>الجبر الخطي · الاحتمالات · الإحصاء<br>الرياضيات المتقطعة · التحسين الرياضي</p></div>
+    <div class="service-card"><h3>مقررات علوم الحاسوب</h3><p>أنظمة التشغيل · الخوارزميات<br>قواعد البيانات · هياكل البيانات</p></div>
+    <div class="service-card"><h3>التحضير للامتحانات</h3><p>مراجعة مكثفة قبل الامتحانات<br>استراتيجيات لإعادة المحاولة</p></div>
+    <div class="service-card"><h3>مشاريع التخرج والرسائل</h3><p>إشراف أكاديمي · المنهجية · التجارب<br>الكتابة الأكاديمية (بكالوريوس ← دكتوراه)</p></div>
+    <div class="service-card"><h3>التوجيه والإرشاد</h3><p>خطط دراسية · تطوير العقلية<br>نصائح مهنية وأكاديمية</p></div>
+    <div class="service-card cta">
+      <div class="cta-text">🕒 الأماكن محدودة — احجز الآن!</div>
+      <a href="#contact" class="cta-button">احجز جلسة تعريفية مجانية</a>
+    </div>
+  </div>
+
+  <!-- disclaimers – stars removed, CSS adds one -->
+  <p class="note lang-en">This list isn’t exhaustive — feel free to reach out with your course or topic and we’ll work out a tailored plan.</p>
+  <p class="note lang-ar hidden">هذه القائمة ليست شاملة — لا تتردد بالتواصل بخصوص أي موضوع أو مادة.</p>
+  <p class="note lang-en">I do not do your coursework or assignments for you — I guide and teach you how to master it yourself!</p>
+  <p class="note lang-ar hidden">لا أقوم بعمل الواجبات أو المشاريع نيابة عنك — بل أُعلمك كيف تنجزها بنفسك!</p>
 </section>
 
-<!-- =====================================================
-     GALLERY   (unchanged)
-===================================================== -->
+<!-- ============ GALLERY ============ -->
 <section id="gallery" class="section">
   <div class="gallery-carousel">
     <div class="carousel-track">
-      <img src="images/gallery-1.jpg" alt="">
-      <img src="images/gallery-2.jpg" alt="">
-	  <img src="images/gallery-3.jpg" alt="">
-      <img src="images/gallery-4.jpg" alt="">
-      <img src="images/gallery-5.jpg" alt="">
-      <img src="images/gallery-6.jpg" alt="">
-      <img src="images/gallery-7.jpg" alt="">
-      <img src="images/gallery-8.jpg" alt="">
-
-      <!-- Duplicated for seamless scroll -->
-      <img src="images/gallery-1.jpg" alt="">
-      <img src="images/gallery-2.jpg" alt="">
-	  <img src="images/gallery-3.jpg" alt="">
-      <img src="images/gallery-4.jpg" alt="">
-      <img src="images/gallery-5.jpg" alt="">
-      <img src="images/gallery-6.jpg" alt="">
-      <img src="images/gallery-7.jpg" alt="">
-      <img src="images/gallery-8.jpg" alt="">
+      <img src="images/gallery-1.jpg" alt="" role="presentation">
+      <img src="images/gallery-2.jpg" alt="" role="presentation">
+      <img src="images/gallery-3.jpg" alt="" role="presentation">
+      <img src="images/gallery-4.jpg" alt="" role="presentation">
+      <img src="images/gallery-5.jpg" alt="" role="presentation">
+      <img src="images/gallery-6.jpg" alt="" role="presentation">
+      <img src="images/gallery-7.jpg" alt="" role="presentation">
+      <img src="images/gallery-8.jpg" alt="" role="presentation">
+      <img src="images/gallery-1.jpg" alt="" role="presentation">
+      <img src="images/gallery-2.jpg" alt="" role="presentation">
+      <img src="images/gallery-3.jpg" alt="" role="presentation">
+      <img src="images/gallery-4.jpg" alt="" role="presentation">
+      <img src="images/gallery-5.jpg" alt="" role="presentation">
+      <img src="images/gallery-6.jpg" alt="" role="presentation">
+      <img src="images/gallery-7.jpg" alt="" role="presentation">
+      <img src="images/gallery-8.jpg" alt="" role="presentation">
     </div>
   </div>
 </section>
 
-<!-- =====================================================
-     CONTACT FORM  (unchanged)
-===================================================== -->
+<!-- ============ CONTACT ============ -->
 <section id="contact" class="section contact-form" aria-label="Contact Form">
-  <h2>Get in Touch</h2>
+  <h2 class="lang-en">Get in Touch</h2>
+  <h2 class="lang-ar hidden">تواصل معي</h2>
+
   <form action="https://formspree.io/f/myzjjzka" method="POST">
-    <label>Name <input type="text"   name="name"    required placeholder="Your full name"></label>
-    <label>Email <input type="email" name="email"   required placeholder="you@example.com"></label>
-    <label>Message <textarea name="message" rows="5" required placeholder="Hi Dr Anas, I’m interested in booking a first session. I’d like help with..."></textarea></label>
-    <button type="submit" aria-label="Send your message to Dr Anas">Send Message</button>
+    <!-- EN -->
+    <label class="lang-en">Name <input type="text" name="name" required placeholder="Your full name"></label>
+    <label class="lang-en">Email <input type="email" name="email" required placeholder="you@example.com"></label>
+    <label class="lang-en">Message <textarea name="message" rows="5" required placeholder="Hi Dr Anas, I’d like help with…"></textarea></label>
+
+    <!-- AR -->
+    <label class="lang-ar hidden">الاسم <input type="text" name="name" required placeholder="الاسم الكامل"></label>
+    <label class="lang-ar hidden">البريد الإلكتروني <input type="email" name="email" required placeholder="you@example.com"></label>
+    <!-- ellipsis fixed with RTL mark (&#8207;) -->
+    <label class="lang-ar hidden">الرسالة <textarea name="message" rows="5" required placeholder="مرحباً دكتور أنس، أحتاج مساعدة في…&#8207;"></textarea></label>
+
+    <button type="submit" aria-label="Send message" class="lang-en">Send Message</button>
+    <button type="submit" aria-label="إرسال الرسالة" class="lang-ar hidden">إرسال الرسالة</button>
   </form>
-  <div id="form-message" style="display:none;margin-top:1rem;color:green;font-weight:600;">✅ Thanks! Your message was sent successfully. I will be in touch soon.</div>
+
+  <div id="form-message" style="display:none;margin-top:1rem;color:green;font-weight:600;">
+    ✅ <span class="lang-en">Thanks! Your message was sent successfully.</span>
+    <span class="lang-ar hidden">شكراً! تم إرسال رسالتك بنجاح.</span>
+  </div>
 </section>
 
-<!-- =====================================================
-     FOOTER (unchanged)
-===================================================== -->
+<!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="footer-inner">
-    <div class="footer-logo"><img src="images/logo.png" alt="Dr Anas Logo"></div>
+    <!--<div class="footer-logo"><img src="images/logo.png" alt=""></div>-->
     <div class="footer-content">
       <div class="footer-contact">
-        <a class="card" href="https://wa.me/447123456789"  target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        <a class="card" href="mailto:dr.anas.elhag@gmail.com"><i class="fa fa-envelope"></i> Email</a>
-        <a class="card" href="https://x.com/Anas_Abdalla"   target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-        <a class="card" href="https://uk.linkedin.com/in/anaselhag" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a class="card" href="mailto:dr.anas.elhag@gmail.com">
+          <i class="fa fa-envelope"></i> <span class="lang-en">Email</span><span class="lang-ar hidden">البريد الإلكتروني</span>
+        </a>
+        <a class="card" href="https://x.com/Anas_Abdalla" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i> <span class="lang-en">Twitter</span><span class="lang-ar hidden">تويتر</span>
+        </a>
+        <a class="card" href="https://uk.linkedin.com/in/anaselhag" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i> <span class="lang-en">LinkedIn</span><span class="lang-ar hidden">لينكدإن</span>
+        </a>
       </div>
-      <div class="footer-copy">© 2025 Dr Anas — Private Tuition</div>
-	  <p style="font-size:0.8rem;color:#ccc;margin-top:1rem;">
-        This site uses cookies and Google Analytics to improve experience. By using this site, you agree to the terms. No personal data is sold or shared.
+
+      <div class="footer-copy">
+        <span class="lang-en">© 2025 Dr Anas — Private Tuition</span>
+        <span class="lang-ar hidden" dir="rtl">© 2025 الدكتور أنس — دروس خصوصية</span>
+      </div>
+
+      <p style="font-size:0.8rem;color:#ccc;margin-top:1rem;">
+        <span class="lang-en">This site uses cookies and Google Analytics to improve experience. No personal data is sold or shared.</span>
+<span class="lang-ar hidden" dir="rtl">
+  هذا الموقع يستخدم ملفات تعريف الارتباط و <span dir="ltr">Google Analytics</span> لتحسين تجربتك. لا يتم بيع أو مشاركة بياناتك الشخصية.
+</span>
+
       </p>
     </div>
   </div>
 </footer>
 
-<!-- =====================================================
-     FORM SUBMISSION JS (unchanged)
-===================================================== -->
-<script>
-const form=document.querySelector('form');const msg=document.getElementById('form-message');
-form.addEventListener('submit',async e=>{
-  e.preventDefault();
-  const data=new FormData(form);
-  try{
-    const res=await fetch(form.action,{method:form.method,body:data,headers:{Accept:'application/json'}});
-    if(res.ok){form.reset();msg.style.display='block';}
-    else{alert('Oops! Something went wrong. Please try again.');}
-  }catch(err){alert('There was a network issue. Try again later.');}
-});
-</script>
+<!-- ============ SCRIPTS ============ -->
+<script src="main.js"></script>
 </body>
 </html>
