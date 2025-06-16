@@ -1,79 +1,79 @@
-/* =======================================================
-   Google Analytics bootstrap
-   ======================================================= */
-window.dataLayer = window.dataLayer || [];
-function gtag () { dataLayer.push(arguments); }
-gtag('js', new Date());
-gtag('config', 'G-33M73GFVGG');
+/* =========================================================
+   main.js – contact form + language switcher
+   ========================================================= */
+console.log('✅ main.js loaded');
 
-/* =======================================================
-   Simple language switcher
-   ======================================================= */
 document.addEventListener('DOMContentLoaded', () => {
-  const toggle    = document.getElementById('toggle-lang');
-  const toggleTxt = document.getElementById('toggle-text');
 
-  /** Apply language state */
-  function applyLang (arabic) {
-    // body direction & <html lang>
-    document.body.classList.toggle('rtl', arabic);
-    document.documentElement.lang = arabic ? 'ar' : 'en';
+  /* ---------- Google Analytics stub ---------- */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-33M73GFVGG');
 
-    // toggle text blocks
+  /* ---------- simple language switcher ---------- */
+  const toggle   = document.getElementById('toggle-lang');
+  const toggleTx = document.getElementById('toggle-text');
+
+  function switchLang () {
+    const makeArabic = !document.body.classList.contains('rtl');
+
+    /* flip body dir + <html lang> */
+    document.body.classList.toggle('rtl', makeArabic);
+    document.documentElement.lang = makeArabic ? 'ar' : 'en';
+
+    /* show/hide nodes */
     document.querySelectorAll('.lang-en')
-      .forEach(el => el.classList.toggle('hidden', arabic));
+            .forEach(el => el.classList.toggle('hidden', makeArabic));
     document.querySelectorAll('.lang-ar')
-      .forEach(el => el.classList.toggle('hidden', !arabic));
+            .forEach(el => el.classList.toggle('hidden', !makeArabic));
 
-    // button label
-    if (toggleTxt) {
-      toggleTxt.textContent = arabic
-        ? 'English Version'
-        : 'النسخة العربية';
-    }
+    /* button label */
+    toggleTx.textContent = makeArabic ? '🇬🇧 English Version'
+                                      : 'اقرأ باللغة العربية';
   }
+  if (toggle) toggle.addEventListener('click', e => {
+    e.preventDefault();
+    switchLang();
+  });
 
-  /* ---- initial state (English) ---- */
-  applyLang(false);
-
-  /* ---- click handler ---- */
-  if (toggle) {
-    toggle.addEventListener('click', e => {
-      e.preventDefault();
-      const switchToArabic = !document.body.classList.contains('rtl');
-      applyLang(switchToArabic);
-    });
-  }
-
-  /* =====================================================
-     Formspree handler
-     ===================================================== */
-  const form = document.querySelector('form');
+  /* ---------- Formspree handler ---------- */
+  const form = document.getElementById('contact-form');
   const msg  = document.getElementById('form-message');
 
-  if (form) {
-    form.addEventListener('submit', async e => {
-      e.preventDefault();
-      const data = new FormData(form);
-      try {
-        const res = await fetch(form.action, {
-          method : form.method,
-          body   : data,
-          headers: { Accept: 'application/json' }
-        });
-        if (res.ok) {
-          form.reset();
-          if (msg) msg.style.display = 'block';
-        } else {
-          alert(document.body.classList.contains('rtl')
-            ? 'حدث خطأ. حاول مرة أخرى.'
-            : 'Oops! Something went wrong.');
-        }
-      } catch {
-        alert(document.body.classList.contains('rtl')
-          ? 'مشكلة في الاتصال. حاول لاحقاً.'
-          : 'Network error. Try again later.');
-      }
-    });
+  if (!form) {
+    console.warn('❌ No form element found');
+    return;
   }
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    console.log('📨 Submitting form…');
+
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch(form.action, {
+        method: form.method,
+        body:   data,
+        headers:{ 'Accept':'application/json' }
+      });
+
+      console.log('🔵 Response status:', res.status);
+      if (res.ok) {
+        form.reset();
+        msg.style.display = 'block';
+        console.log('✅ Message sent!');
+      } else {
+        alert(document.body.classList.contains('rtl')
+              ? 'حدث خطأ. حاول مرة أخرى.'
+              : 'Oops! Something went wrong.');
+      }
+    } catch (err) {
+      alert(document.body.classList.contains('rtl')
+            ? 'مشكلة في الاتصال. حاول لاحقاً.'
+            : 'Network error. Try again later.');
+      console.error(err);
+    }
+  });
 });
