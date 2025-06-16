@@ -142,7 +142,7 @@ footer{background:var(--maroon);color:#fff;text-align:center;padding:2rem 1rem;}
    ========================================================= */
 @media(max-width:850px){
   .hero__inner{flex-direction:column;text-align:center;}
-  .rtl .hero__inner{flex-direction:column!important;} /* ✅ Force vertical on RTL too */
+  .rtl .hero__inner{flex-direction:column!important;} /* <- added override */
   .hero__media{flex:1 1 100%;max-width:100%;}
   .hero__content{flex:1 1 100%;align-items:center;}
   .hero__media img{max-width:160px;}
@@ -184,3 +184,4 @@ footer{background:var(--maroon);color:#fff;text-align:center;padding:2rem 1rem;}
 .rtl .footer-contact .card{flex-direction:row-reverse;}
 .rtl .carousel-track{flex-direction:row-reverse;direction:ltr;animation:scrollGalleryRTL 40s linear infinite;}
 @keyframes scrollGalleryRTL{0%{transform:translateX(calc(-1 * var(--img-total) * 8));}100%{transform:translateX(0);}}
+/* language-toggle margin handled above */
