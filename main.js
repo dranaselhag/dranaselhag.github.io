@@ -29,8 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {
             .forEach(el => el.classList.toggle('hidden', !makeArabic));
 
     /* button label */
-    toggleTx.textContent = makeArabic ? '🇬🇧 English Version'
-                                      : 'اقرأ باللغة العربية';
+    toggleTx.textContent = makeArabic ? 'English Version'
+                                      : 'النسخة العربية';
+									  
+	/* placeholders (English ↔ Arabic) */
+    document.querySelectorAll('#contact-form [data-placeholder-ar]')
+            .forEach(el => {
+              /* save EN once */
+              if (!el.dataset.placeholderEn) {
+                el.dataset.placeholderEn = el.placeholder;
+              }
+              el.placeholder = makeArabic ? el.dataset.placeholderAr
+                                          : el.dataset.placeholderEn;
+            });
   }
   if (toggle) toggle.addEventListener('click', e => {
     e.preventDefault();
