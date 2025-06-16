@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <title>Dr Anas · Private Tuition in CS & AI</title>
-  <meta name="description" content="Private tutoring with Dr Anas: 1-to-1 help in Computer Science, AI & Maths from BSc to PhD. Learn in Arabic or English.">
+  <meta name="description"
+        content="Private tutoring with Dr Anas: 1-to-1 help in Computer Science, AI & Maths from BSc to PhD. Learn in Arabic or English.">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
   <!-- SEO / Social -->
   <link rel="canonical" href="https://dranaselhag.github.io/">
-  <meta property="og:title"        content="Dr Anas · Private Tuition in CS & AI">
-  <meta property="og:description"  content="1-to-1 tutoring in Computer Science, AI & Maths. BSc to PhD. Learn in Arabic or English.">
-  <meta property="og:image"        content="https://dranaselhag.github.io/images/logo.jpg">
-  <meta property="og:url"          content="https://dranaselhag.github.io/">
-  <meta property="og:type"         content="website">
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Dr Anas · Private Tuition in CS & AI">
-  <meta name="twitter:description" content="Private 1-to-1 tutoring in Computer Science, AI & Maths – from BSc to PhD.">
-  <meta name="twitter:image"       content="https://dranaselhag.github.io/images/logo.jpg">
+  <meta property="og:title"       content="Dr Anas · Private Tuition in CS & AI">
+  <meta property="og:description" content="1-to-1 tutoring in Computer Science, AI & Maths. BSc to PhD. Learn in Arabic or English.">
+  <meta property="og:image"       content="https://dranaselhag.github.io/images/anas.jpg">
+  <meta property="og:url"         content="https://dranaselhag.github.io/">
+  <meta property="og:type"        content="website">
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:title"      content="Dr Anas · Private Tuition in CS & AI">
+  <meta name="twitter:description"
+        content="Private 1-to-1 tutoring in Computer Science, AI & Maths – from BSc to PhD.">
+  <meta name="twitter:image"      content="https://dranaselhag.github.io/images/anas.jpg">
 
   <!-- Fonts / Icons / CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,7 +63,7 @@
           <i class="fab fa-linkedin"></i> <span class="lang-en">LinkedIn</span><span class="lang-ar hidden">لينكدإن</span>
         </a>
         <a href="#" id="toggle-lang" class="card lang-toggle">
-          <i class="fa-solid fa-language"></i> <span id="toggle-text">النسخة العربية</span>
+          <i class="fa-solid fa-language"></i> <span id="toggle-text">اقرأ باللغة العربية</span>
         </a>
       </div>
     </div>
@@ -168,23 +170,37 @@
   <h2 class="lang-en">Get in Touch</h2>
   <h2 class="lang-ar hidden">تواصل معي</h2>
 
-  <form action="https://formspree.io/f/myzjjzka" method="POST">
-    <!-- EN -->
-    <label class="lang-en">Name <input type="text" name="name" required placeholder="Your full name"></label>
-    <label class="lang-en">Email <input type="email" name="email" required placeholder="you@example.com"></label>
-    <label class="lang-en">Message <textarea name="message" rows="5" required placeholder="Hi Dr Anas, I’d like help with…"></textarea></label>
+  <form id="contact-form"
+        action="https://formspree.io/f/myzjjzka"
+        method="POST" novalidate>
+    <!-- Name -->
+    <label class="lang-en" for="name">Name</label>
+    <label class="lang-ar hidden" for="name">الاسم</label>
+    <input id="name" dir="auto"
+           type="text" name="name" required
+           placeholder="Your full name">
 
-    <!-- AR -->
-    <label class="lang-ar hidden">الاسم <input type="text" name="name" required placeholder="الاسم الكامل"></label>
-    <label class="lang-ar hidden">البريد الإلكتروني <input type="email" name="email" required placeholder="you@example.com"></label>
-    <!-- ellipsis fixed with RTL mark (&#8207;) -->
-    <label class="lang-ar hidden">الرسالة <textarea name="message" rows="5" required placeholder="مرحباً دكتور أنس، أحتاج مساعدة في…&#8207;"></textarea></label>
+    <!-- Email -->
+    <label class="lang-en" for="email">Email</label>
+    <label class="lang-ar hidden" for="email">البريد الإلكتروني</label>
+    <input id="email" dir="ltr"
+           type="email" name="email" required
+           placeholder="you@example.com">
 
-    <button type="submit" aria-label="Send message" class="lang-en">Send Message</button>
-    <button type="submit" aria-label="إرسال الرسالة" class="lang-ar hidden">إرسال الرسالة</button>
+    <!-- Message -->
+    <label class="lang-en" for="message">Message</label>
+    <label class="lang-ar hidden" for="message">الرسالة</label>
+    <textarea id="message" dir="auto"
+              name="message" rows="5" required
+              placeholder="Hi Dr Anas, I’d like help with…"></textarea>
+
+    <!-- Buttons -->
+    <button type="submit" class="lang-en">Send Message</button>
+    <button type="submit" class="lang-ar hidden">إرسال الرسالة</button>
   </form>
 
-  <div id="form-message" style="display:none;margin-top:1rem;color:green;font-weight:600;">
+  <div id="form-message"
+       style="display:none;margin-top:1rem;color:green;font-weight:600;">
     ✅ <span class="lang-en">Thanks! Your message was sent successfully.</span>
     <span class="lang-ar hidden">شكراً! تم إرسال رسالتك بنجاح.</span>
   </div>
@@ -224,6 +240,6 @@
 </footer>
 
 <!-- ============ SCRIPTS ============ -->
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>
