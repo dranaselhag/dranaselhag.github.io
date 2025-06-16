@@ -39,19 +39,11 @@
     <div class="hero__media"><img src="images/logo.png" alt="Dr Anas logo"></div>
     <div class="hero__content">
       <h1 class="lang-en">Private Tuition in<br><span class="accent">Computer Science, AI & Maths</span></h1>
-      <!-- arrow changed → for EN is fine -->
       <h1 class="lang-ar hidden">دروس خصوصية في علوم الحاسوب،<br><span class="accent">الذكاء الاصطناعي، والرياضيات</span></h1>
 
-      <!-- sub-line -->
-      <!--<p class="sub lang-en">Arabic & English • BSc → PhD • £30-£50 per hour</p>-->
-	  <p class="sub lang-en">Arabic & English • BSc, MSc and PhD • £30-£50 per hour</p>
+      <p class="sub lang-en">Arabic & English • BSc, MSc and PhD</p>
+      <p class="sub lang-ar hidden">بالعربية والإنجليزية • بكالوريوس، ماجستير ودكتوراه</p>
 
-      <!-- arrow direction + £ position fixed -->
-     <!--<p class="sub lang-ar hidden">بالعربية والإنجليزية • بكالوريوس ← دكتوراه • &#8206;£30 - &#8206;£50 في الساعة</p>-->
-	 <p class="sub lang-ar hidden">بالعربية والإنجليزية • بكالوريوس، ماجستير ودكتوراه • &#8206;£30 - &#8206;£50 في الساعة</p>
-
-
-      <!-- contacts + toggle -->
       <div class="hero__contact">
         <a href="mailto:dr.anas.elhag@gmail.com" class="card">
           <i class="fa fa-envelope"></i> <span class="lang-en">Email</span><span class="lang-ar hidden">البريد الإلكتروني</span>
@@ -63,7 +55,7 @@
           <i class="fab fa-linkedin"></i> <span class="lang-en">LinkedIn</span><span class="lang-ar hidden">لينكدإن</span>
         </a>
         <a href="#" id="toggle-lang" class="card lang-toggle">
-          <i class="fa-solid fa-language"></i> <span id="toggle-text">اقرأ باللغة العربية</span>
+          <i class="fa-solid fa-language"></i> <span id="toggle-text">النسخة العربية</span>
         </a>
       </div>
     </div>
@@ -107,38 +99,84 @@
   <h2 class="lang-ar hidden">كيف يمكنني مساعدتك</h2>
 
   <div class="service-grid lang-en">
-    <div class="service-card"><h3>Programming</h3><p>Python · Java · C/C++ · C#<br>Object-Oriented Programming</p></div>
-    <div class="service-card"><h3>Data Science & AI</h3><p>Data Analysis & Visualisation<br>Machine Learning · AI · GenAI</p></div>
-    <div class="service-card"><h3>CS & Maths Foundations</h3><p>Linear Algebra · Probability · Statistics<br>Discrete Maths · Optimisation</p></div>
-    <div class="service-card"><h3>Computer Science Courses</h3><p>Operating Systems · Algorithms<br>Databases · Data Structures</p></div>
-    <div class="service-card"><h3>Exam Prep & Rescue</h3><p>Crash revision before deadlines & exams<br>Resit coaching & strategy</p></div>
-    <div class="service-card"><h3>Capstone / Thesis Support</h3><p>Supervision · Methodology · Experiments<br>Academic Writing (BSc → PhD)</p></div>
-    <div class="service-card"><h3>Coaching & Mentoring</h3><p>Study Plans · Learning Mindset<br>Career Planning & Research Advice</p></div>
+    <div class="service-card"><h3>💻 Programming</h3><p>Python · Java · C/C++ · C#<br>Object-Oriented Programming</p></div>
+    <div class="service-card"><h3>🤖 Data Science &amp; AI</h3><p>Data Analysis &amp; Visualisation<br>Machine Learning · AI · GenAI</p></div>
+    <div class="service-card"><h3>📚 CS &amp; Maths Foundations</h3><p>Linear Algebra · Probability · Statistics<br>Discrete Maths · Optimisation</p></div>
+    <div class="service-card"><h3>🖥️ Computer Science Courses</h3><p>Operating Systems · Algorithms<br>Databases · Data Structures</p></div>
+    <div class="service-card"><h3>⏱️ Exam Prep &amp; Rescue</h3><p>Crash revision before deadlines &amp; exams<br>Resit coaching &amp; strategy</p></div>
+    <div class="service-card"><h3>📜 Capstone / Thesis Support</h3><p>Supervision · Methodology · Experiments<br>Academic Writing (BSc → PhD)</p></div>
+    <div class="service-card"><h3>🚀 Coaching &amp; Mentoring</h3><p>Study Plans · Learning Mindset<br>Career Planning &amp; Research Advice</p></div>
+    <div class="service-card integrity"><h3>⚖️ Academic Integrity Notice</h3><p>I do not do your assignments for you.<br>I teach you how to master it yourself!</p></div>
+  </div>
+
+  <div class="service-grid lang-ar hidden">
+        <div class="service-card"><h3>&rlm;🤖 علم البيانات والذكاء الاصطناعي</h3><p>تحليل البيانات · تعلم الآلة<br>الذكاء الاصطناعي · الذكاء الاصطناعي التوليدي</p></div>
+		<div class="service-card" dir="rtl"><h3>&rlm;💻 البرمجة</h3><p>بايثون · جافا · سي/سي++ · &rlm;#C&rlm;<br>البرمجة كائنية التوجه</p></div>
+    
+    <div class="service-card"><h3>&rlm;🖥️ مقررات علوم الحاسوب</h3><p>أنظمة التشغيل · الخوارزميات<br>قواعد البيانات · هياكل البيانات</p></div>
+	<div class="service-card"><h3>&rlm;📚 الأساسيات في علوم الحاسوب والرياضيات</h3><p>الجبر الخطي · الاحتمالات · الإحصاء<br>الرياضيات المتقطعة · التحسين الرياضي</p></div>
+	
+    <div class="service-card"><h3>&rlm;📜 مشاريع التخرج والرسائل</h3><p>إشراف أكاديمي · المنهجية · التجارب<br>الكتابة الأكاديمية (بكالوريوس ← دكتوراه)</p></div>
+	<div class="service-card"><h3>&rlm;⏱️ التحضير للامتحانات</h3><p>مراجعة مكثفة قبل الامتحانات<br>استراتيجيات لإعادة المحاولة</p></div>
+	
+    <div class="service-card integrity" dir="rtl"><h3>&rlm;⚖️ النزاهة الأكاديمية</h3><p>لا أقوم بعمل الواجبات أو المشاريع نيابة عنك<br>بل أُعلمك كيف تنجزها بنفسك!</p></div>
+	<div class="service-card" dir="rtl"><h3>&rlm;🚀 التوجيه والإرشاد</h3><p>خطط دراسية · تطوير العقلية<br>نصائح مهنية وأكاديمية</p></div>
+  </div>
+
+  <p class="note lang-en">This list isn’t exhaustive — feel free to reach out with your course or topic and we’ll work out a tailored plan.</p>
+  <p class="note lang-ar hidden">هذه القائمة ليست شاملة — لا تتردد بالتواصل بخصوص أي موضوع أو مادة.</p>
+</section>
+
+<!-- ============ RATES ============ -->
+<section id="rates" class="section">
+  <h2 class="lang-en">Rates &amp; Policies</h2>
+  <h2 class="lang-ar hidden">الباقات والأحكام</h2>
+
+  <div class="service-grid lang-en">
+  <div class="service-card"><h3>👤 BSc: 1-to-1 Private Session</h3><p>£30/hour (QAR 150/hour)</p></div>
+    <div class="service-card"><h3>👥 BSc: Group of 2 Students</h3><p>Each student £20/hour (QAR 100/hour)<br>The group £40/hour (QAR 200/hour)</p></div>
+    <div class="service-card">
+  <h3><span style="font-size: 0.7em;">👤👤👤</span> BSc: Group of 3+ Students</h3>
+  <p>Each student £15/hour (QAR 75/hour)<br>The group £45+/hour (QAR 225+/hour)</p>
+</div>
+
+    <div class="service-card"><h3>🎁 Loyalty Rewards</h3><p>Complete 10 hours and your 11<sup>th</sup> hour is <strong>free!</strong></p></div>
+    <div class="service-card"><h3>🎓 MSc and PhD Students</h3><p>Tailored rates based on requirements<br>Get in touch to discuss</p></div>
+    <div class="service-card"><h3>💳 Payments in Advance</h3><p>You pay in advance for a number of hours<br>You schedule your hours as you wish<br>Use your hours within 3 months</p></div>
+    <div class="service-card"><h3>📅 Cancellation Policy</h3><p>Two days before the session — no charge<br>One day before the session — 50% charge<br>Same-day or no-show — 100% charge</p></div>
+
     <div class="service-card cta">
       <div class="cta-text">🕒 Spaces are limited — book now!</div>
       <a href="#contact" class="cta-button">Book a Free Intro Chat</a>
     </div>
   </div>
 
-  <div class="service-grid lang-ar hidden">
-    <div class="service-card"><h3>البرمجة</h3><p>بايثون · جافا · سي/سي++ · C#<br>البرمجة كائنية التوجه</p></div>
-    <div class="service-card"><h3>علم البيانات والذكاء الاصطناعي</h3><p>تحليل البيانات · تعلم الآلة<br>الذكاء الاصطناعي · الذكاء الاصطناعي التوليدي</p></div>
-    <div class="service-card"><h3>الأساسيات في علوم الحاسوب والرياضيات</h3><p>الجبر الخطي · الاحتمالات · الإحصاء<br>الرياضيات المتقطعة · التحسين الرياضي</p></div>
-    <div class="service-card"><h3>مقررات علوم الحاسوب</h3><p>أنظمة التشغيل · الخوارزميات<br>قواعد البيانات · هياكل البيانات</p></div>
-    <div class="service-card"><h3>التحضير للامتحانات</h3><p>مراجعة مكثفة قبل الامتحانات<br>استراتيجيات لإعادة المحاولة</p></div>
-    <div class="service-card"><h3>مشاريع التخرج والرسائل</h3><p>إشراف أكاديمي · المنهجية · التجارب<br>الكتابة الأكاديمية (بكالوريوس ← دكتوراه)</p></div>
-    <div class="service-card"><h3>التوجيه والإرشاد</h3><p>خطط دراسية · تطوير العقلية<br>نصائح مهنية وأكاديمية</p></div>
+  <div class="service-grid lang-ar hidden">    
+    <div class="service-card" dir="rtl"><h3>&rlm;👥 بكالوريوس: مجموعة من طالبين</h3><p>كل طالب <span dir="ltr">£20</span>/الساعة (١٠٠ ريال/الساعة)<br>المجموعة: <span dir="ltr">£40</span>/الساعة (٢٠٠ ريال/الساعة)</p></div>
+	<div class="service-card" dir="rtl"><h3>&rlm;👤 بكالوريوس: جلسة خاصة فردية</h3><p><span dir="ltr">£30</span>/الساعة (١٥٠ ريال/الساعة)</p></div>
+    <div class="service-card" dir="rtl"><h3>&rlm;🎁 مكافآت الولاء</h3><p>بعد ١٠ ساعات من الدروس، تحصل على<br><strong>الساعة ١١ مجاناً!</strong></p></div>
+	<div class="service-card" dir="rtl">
+  <h3>&rlm;<span style="font-size: 0.7em;">👤👤👤</span> بكالوريوس: مجموعة من ٣ طلاب أو أكثر</h3>
+  <p>كل طالب <span dir="ltr">£15</span>/الساعة (٧٥ ريال/الساعة)<br>المجموعة: <span dir="ltr">£45+</span>/الساعة (٢٢٥ ريال/الساعة أو أكثر)</p>
+</div>
+    <div class="service-card" dir="rtl"><h3>&rlm;🎓 طلاب الماجستير والدكتوراه</h3><p>أسعار مخصصة حسب المتطلبات<br>تواصل معي للنقاش</p></div>
+    <div class="service-card" dir="rtl"><h3>&rlm;💳 الدفع مقدماً</h3><p>يتم الدفع مقدماً لعدد معين من الساعات<br>يمكنك جدولة الجلسات كما ترغب<br>صلاحية الساعات ٣ أشهر</p></div>
+	
     <div class="service-card cta">
-      <div class="cta-text">🕒 الأماكن محدودة — احجز الآن!</div>
+      <div class="cta-text" dir="rtl">&rlm;🕒 الأماكن محدودة — احجز الآن!&rlm;</div>
       <a href="#contact" class="cta-button">احجز جلسة تعريفية مجانية</a>
     </div>
+	
+	<div class="service-card" dir="rtl">
+  <h3>&rlm;📅 سياسة الإلغاء</h3>
+  <p>
+    قبل الجلسة بيومين — لا خصم<br>
+    قبل الجلسة بيوم — خصم ٥٠٪ من الرسوم<br>
+    في نفس اليوم أو عدم الحضور — خصم ١٠٠٪ من الرسوم
+  </p>
+</div>
+		
   </div>
-
-  <!-- disclaimers – stars removed, CSS adds one -->
-  <p class="note lang-en">This list isn’t exhaustive — feel free to reach out with your course or topic and we’ll work out a tailored plan.</p>
-  <p class="note lang-ar hidden">هذه القائمة ليست شاملة — لا تتردد بالتواصل بخصوص أي موضوع أو مادة.</p>
-  <p class="note lang-en">I do not do your coursework or assignments for you — I guide and teach you how to master it yourself!</p>
-  <p class="note lang-ar hidden">لا أقوم بعمل الواجبات أو المشاريع نيابة عنك — بل أُعلمك كيف تنجزها بنفسك!</p>
 </section>
 
 <!-- ============ GALLERY ============ -->
@@ -178,21 +216,24 @@
     <label class="lang-ar hidden" for="name">الاسم</label>
     <input id="name" dir="auto"
            type="text" name="name" required
-           placeholder="Your full name">
+           placeholder="Your full name"
+           data-placeholder-ar="الاسم الكامل">
 
     <!-- Email -->
     <label class="lang-en" for="email">Email</label>
     <label class="lang-ar hidden" for="email">البريد الإلكتروني</label>
     <input id="email" dir="ltr"
            type="email" name="email" required
-           placeholder="you@example.com">
+           placeholder="you@example.com"
+           data-placeholder-ar="you@example.com">
 
     <!-- Message -->
     <label class="lang-en" for="message">Message</label>
     <label class="lang-ar hidden" for="message">الرسالة</label>
     <textarea id="message" dir="auto"
               name="message" rows="5" required
-              placeholder="Hi Dr Anas, I’d like help with…"></textarea>
+              placeholder="Hi Dr Anas, I’d like help with…"
+              data-placeholder-ar="… مرحباً د. أنس، أود المساعدة في"></textarea>
 
     <!-- Buttons -->
     <button type="submit" class="lang-en">Send Message</button>
@@ -202,7 +243,7 @@
   <div id="form-message"
        style="display:none;margin-top:1rem;color:green;font-weight:600;">
     ✅ <span class="lang-en">Thanks! Your message was sent successfully.</span>
-    <span class="lang-ar hidden">شكراً! تم إرسال رسالتك بنجاح.</span>
+    <span class="lang-ar hidden">.شكراً! تم إرسال رسالتك بنجاح</span>
   </div>
 </section>
 
@@ -230,10 +271,9 @@
 
       <p style="font-size:0.8rem;color:#ccc;margin-top:1rem;">
         <span class="lang-en">This site uses cookies and Google Analytics to improve experience. No personal data is sold or shared.</span>
-<span class="lang-ar hidden" dir="rtl">
-  هذا الموقع يستخدم ملفات تعريف الارتباط و <span dir="ltr">Google Analytics</span> لتحسين تجربتك. لا يتم بيع أو مشاركة بياناتك الشخصية.
-</span>
-
+        <span class="lang-ar hidden" dir="rtl">
+          هذا الموقع يستخدم ملفات تعريف الارتباط و <span dir="ltr">Google Analytics</span> لتحسين تجربتك. لا يتم بيع أو مشاركة بياناتك الشخصية.
+        </span>
       </p>
     </div>
   </div>
