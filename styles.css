@@ -70,7 +70,7 @@ img{display:block;max-width:100%;height:auto;}
 .about i{color:var(--maroon);margin-right:0.4rem;}
 .about h2{text-align:left;margin-bottom:1rem;}
 .about ul{color:var(--text);margin-top:0.5rem;padding-left:0;list-style:none;}
-.about li{margin:0.4rem 0;display:flex;align-items:center;gap:0.4rem;font-weight: bold;}
+.about li{margin:0.4rem 0;display:flex;align-items:center;gap:0.4rem;font-weight:bold;}
 
 .logos-about{margin-top:1.5rem;display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;justify-items:center;}
 .logos-about img{height:72px;}
@@ -79,12 +79,29 @@ img{display:block;max-width:100%;height:auto;}
 .logos-about-text i{color:var(--maroon);font-size:1.1rem;}
 
 /* =========================================================
-   SERVICES
+   SERVICES + RATES CARDS
    ========================================================= */
 .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:1.5rem;}
-.service-card{background:#fff;border-radius:10px;box-shadow:var(--shadow);padding:1.3rem 1.4rem;display:flex;flex-direction:column;justify-content:center;}
+/* light maroon tint for every normal card */
+.service-card{
+  background:#fdf3f5;
+  border-radius:10px;
+  box-shadow:var(--shadow);
+  padding:1.3rem 1.4rem;
+  display:flex;flex-direction:column;justify-content:center;
+}
 .service-card h3{color:var(--maroon);font-size:1.1rem;margin-bottom:0.7rem;text-align:center;}
 .service-card p{color:var(--text);font-size:0.95rem;text-align:center;margin:0.3rem 0;line-height:1.5;}
+
+/* standout integrity card */
+.service-card.integrity{
+  background:var(--maroon);
+  color:#fff;
+}
+.service-card.integrity h3,
+.service-card.integrity p{color:#fff;}
+
+/* CTA keeps original styling */
 .service-card.cta{flex-direction:row;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;}
 .service-card.cta .cta-text{font-size:1.05rem;font-weight:600;color:var(--maroon);text-align:center;flex:1 1 100%;margin-bottom:0.4rem;}
 .service-card.cta .cta-button{background:var(--maroon);color:#fff;padding:0.6rem 1rem;border-radius:6px;text-decoration:none;font-weight:600;flex:1 1 auto;text-align:center;transition:background 0.3s;}
@@ -154,11 +171,11 @@ footer{background:var(--maroon);color:#fff;text-align:center;padding:2rem 1rem;}
 /* ABOUT RTL */
 .rtl .about{flex-direction:row-reverse;}
 .rtl .about .text{text-align:justify;}
-.rtl .about .text p{direction:rtl; text-align:justify;}
+.rtl .about .text p{direction:rtl;text-align:justify;}
 .rtl .about ul{padding-right:0;}
 .rtl .about li{direction:rtl;display:flex;align-items:center;gap:0.4rem;}
 .rtl .about h2{text-align:right!important;}
-.rtl .about li i{margin-left:0.4rem;margin-right:0;font-weight: bold;}
+.rtl .about li i{margin-left:0.4rem;margin-right:0;font-weight:bold;}
 
 /* disclaimers RTL */
 .rtl .note{text-align:center;direction:rtl;}
@@ -170,8 +187,7 @@ footer{background:var(--maroon);color:#fff;text-align:center;padding:2rem 1rem;}
 
 /* FOOTER RTL */
 .rtl .footer-inner{flex-direction:row-reverse;justify-content:center;}
-.rtl .footer-contact .card {flex-direction: row-reverse;}
-
+.rtl .footer-contact .card{flex-direction:row-reverse;}
 
 /* GALLERY RTL */
 .rtl .carousel-track{flex-direction:row-reverse;direction:ltr;animation:scrollGalleryRTL 40s linear infinite;}
